@@ -120,3 +120,10 @@ const options = {
 
 // copying object
 // shallow copy spred oprater Object.assign({},object)
+
+useEffect (()={
+                         // only callback function is call in onces page renders
+},[])
+useEffect (()={
+  // only callback function is call in onces page renders
+})

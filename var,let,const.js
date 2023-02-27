@@ -36,7 +36,7 @@ const a;//! ERR SystaxERROR Missing initializer in const declaration
 
 // // /////////////////////////////////////////////////////////////////////// 
 
-// ? Re-lnitialisation
+// ? Re-Initialisation
 const h =5;
 h = 8; //! TypeERROR: Assignement to constant variable
 
