@@ -1,35 +1,16 @@
-# JavaScript Interview Question and Answer
-`level 0`
+React Developer: Pad le bhai (2023)
 
-<details>
-<summary>What is JavaScript?
-</summary>
-JavaScript is a programming language used both on the client-side and server-side that allows us to make web page intervactive.   
+These are some lib we need fouses
 
-JavaScript was developed by Brendan Eich, in September 1995,   
-JavaScript was initially called Mocha. After that, it was called Live Script and later known as JavaScript.
-</details>
+1. React Hooks
+2. Next.js
+3. React Redux
+4. Formik
+5. React Query
+6. React Virtualized
+7. React Spring
+8. React Testing Library
+9. Type Script
+10. React Native
 
-<details>
-<summary>Datatypes ?
-</summary>
-- String
-- Number
-- Bigint
-- Boolean
-- Undefined
-- Null
-- Symbol
-</details>
-
-<details>
-<summary>List some of the advantages of JavaScript.
-</summary>
-[link](https://data-flair.training/blogs/advantages-disadvantages-javascript)
-</details>
-
-<details>
-<summary>What paradigm is Javascript
-</summary>
-[link](https://data-flair.training/blogs/advantages-disadvantages-javascript)
-</details>
+refer: https://www.youtube.com/watch?v=Odjswd2DIUY

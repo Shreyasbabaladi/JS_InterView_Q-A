@@ -71,29 +71,15 @@ const compose = (...fns) => {
 //2nd way is useing reduce function
 
 const compose2 = (...functions) => {
-    return  (arg) => {
-        return functions.reduceRight((arg, fn) => fn(arg),arg)
-    }
-  };
+  return (arg) => {
+    return functions.reduceRight((arg, fn) => fn(arg), arg)
+  }
+};
 
 
 false && console.log(compose2(c1, b1, a1)(10));
 
 
-
-
-const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'efddd6d3edmsh67897e30a01fd8ep1a8f42jsn6515bea9846a',
-      'X-RapidAPI-Host': 'hotels4.p.rapidapi.com'
-    }
-  };
-  
-  fetch('https://hotels4.p.rapidapi.com/v2/get-meta-data', options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
 
 
 
@@ -121,9 +107,9 @@ const options = {
 // copying object
 // shallow copy spred oprater Object.assign({},object)
 
-useEffect (()={
-                         // only callback function is call in onces page renders
-},[])
-useEffect (()={
+useEffect(() = {
+  // only callback function is call in onces page renders
+}, [])
+useEffect(() = {
   // only callback function is call in onces page renders
 })

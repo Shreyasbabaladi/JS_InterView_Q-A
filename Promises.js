@@ -156,6 +156,8 @@ pro.then((res) => {
 
 console.log("ends");
 
+stopPropagation;
+
 // output
 
 // start

@@ -18,7 +18,6 @@ function display() {
   function toConsole() {
     0 && console.log(name);
   }
-  to0 && console();
 }
 
 0 && display();
