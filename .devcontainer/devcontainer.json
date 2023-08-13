@@ -1,0 +1,19 @@
+{
+    "name": "My Dev Container",
+    "extensions": [
+        "BracketPairColorDLW.bracket-pair-color-dlw",
+        "burkeholland.simple-react-snippets",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "Postman.postman-for-vscode",
+        "ritwickdey.LiveServer",
+        "rodrigovallades.es7-react-js-snippets",
+        "thomasviaud.tachyons-snippets",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "wayou.vscode-todo-highlight",
+    ],
+  }
+  
