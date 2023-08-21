@@ -71,13 +71,15 @@ squre(5);
 
 /////////////////////////////////////////////////////
 for (var i = 0; i < 4; i++) {
-  function innerfn(i) {
-    setTimeout(() => {
-      0 && console.log(i);
-    }, 1000);
-  }
-  innerfn(i);
+
+  setTimeout((j => {
+    return () => {
+      0 && console.log(j);
+    }
+  })(i), 1000);
 }
+
+
 /////////////////////////////////////////////////////
 // Ques 5: How would you use a closure to create a private counter?
 

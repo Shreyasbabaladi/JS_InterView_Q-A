@@ -22,7 +22,7 @@ function sumCurrying(a) {
 }
 
 // result 
-0 && console.log(sumCurrying(1)(2)(3));
+console.log(sumCurrying(1)(2)(3));
 // ------------------------------------------------------------------------
 
 // Q2
@@ -52,10 +52,10 @@ function evaluate(operate) {
 // Q3 
 // Infinite Currying => sum(I)(2)(3)....(n)
 function sumInfinite(a) {
-        return function (b) {
-            if(b) return sumInfinite(a + b);
-            return a;
-        };
+  return function (b) {
+    if (b) return sumInfinite(a + b);
+    return a;
+  };
 }
 
 // in Arro function  sumInfinite(a) => (b) => b ? a: sumInfinite(a+b);
@@ -68,21 +68,21 @@ function sumInfinite(a) {
 // Currying vs Partial Application
 // EXP Partial Application
 function sumPartial(a) {
-    return function (b,c) {
-        return a + b + c;
-    };
+  return function (b, c) {
+    return a + b + c;
+  };
 }
 
 const a = sumPartial(3);
-0 && console.log(a(1,3));
+0 && console.log(a(1, 3));
 // ------------------------------------------------------------------------
 
 // Q5 
 // Manipulating DOM 
 function updateElementText(id) {
-    return function (content) {
-        document.querySelector(`#${id}`).innerText = content;
-    }
+  return function (content) {
+    document.querySelector(`#${id}`).innerText = content;
+  }
 }
 
 const updateHeader = updateElementText('someID');
@@ -94,3 +94,5 @@ const updateHeader = updateElementText('someID');
 
 // Q6
 // curry() implementation => Converts f(a, b, c) into f(a)(b)(c)
+
+
