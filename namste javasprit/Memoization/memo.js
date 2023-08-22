@@ -12,7 +12,7 @@ const calc = (n) => {
 } 
 
 
-const momoize = (fun) => {
+const memoize = (fun) => {
     let cache = {};
 
     return function (...args) {
@@ -34,7 +34,7 @@ const momoize = (fun) => {
 
 console.time()
 
-const efficent = momoize(calc);
+const efficent = memoize(calc);
 console.log(efficent(5));
 console.timeEnd();
 

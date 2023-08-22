@@ -19,7 +19,7 @@ How were our tests found?
 1st testing 
 https://codesandbox.io/s/rtl-starter-forked-9vg8rw?file=/src/app.test.js
 
-===============================================================================================================================
+============================================================================================================================
 
 React Testing Library Query System
 ---------------------------------------
@@ -62,3 +62,19 @@ w3.org/TR/html-aria/#docconformance
 
 2nd testing 
 https://codesandbox.io/s/cold-microservice-f7tqp2?file=/src/UserFrom.test.js
+
+
+User Event simulation
+--------------------------------------------------------------------
+user.click(element);                => Simulates clicking on the provided element
+user. keyboard('asdf');             => Simulates typing 'asdf'
+user. keyboard('{Enter}');          => Simulates pressing the Enter key
+
+
+Mock Functions
+-----------------------------------------------------
+Fake function that doesn't do anything
+Records whenever it gets called, and the arguments it was called with
+Used very often when we need to make sure a component calls a callback
+
+Exp const mock = jest.fn(); This is how we can create the mock function 
