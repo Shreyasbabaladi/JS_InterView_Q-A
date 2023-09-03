@@ -1,6 +1,6 @@
 React Testing 
 
-Refs:- https://youtu.be/NLFPvO8_hMQ?t=2992
+Refs:- https://youtu.be/NLFPvO8_hMQ
 codeSandBox:- https://codesandbox.io/s/cold-microservice-f7tqp2?file=/src/UserFrom.test.js 
 
 What were all those import statements?
@@ -78,3 +78,32 @@ Records whenever it gets called, and the arguments it was called with
 Used very often when we need to make sure a component calls a callback
 
 Exp const mock = jest.fn(); This is how we can create the mock function 
+
+
+logTestingPlaygroundURL
+------------------------------------------------------
+We can use logTestingPlaygroundURL function to find appropriate selector. It will generated the link to play with code
+
+exp:-  screen.logTestingPlaygroundURL();
+
+
+**Sometimes finding elements by role just doesn't work well
+    Tip - don't obsess over getting the 'right' query
+    Two 'escape hatches' - ways to find elements when the
+    preferred 'role' approach doesn't work
+        1) data-testid         
+        2) container.querySelector()
+
+ex:- data-testid    
+            In jsx add the data-testid attribute grab it in .test.js file
+                <tbody data-testid='users'>
+            In .test.js
+            within(screen.getAllByTestId('users')).getAllByRole('row'); 
+
+ex:- container.querySelector();
+            In render method will return container object which is wapper added by test env by this object grab 
+            any element by primitive way of js querySelectors 
+            const {container}= render(<UserTable userList={user}/>);
+            const numRow = container.querySelectorAll('tbody tr')
+
+

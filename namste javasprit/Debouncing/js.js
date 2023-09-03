@@ -11,7 +11,7 @@ const debouncing = (fn,d) => {
         args = arguments;
         clearTimeout(timer);
          timer = setTimeout(() => {
-            getData.apply(context,arguments)
+            getData.apply(context,args);
         }, d);
     }
 }
