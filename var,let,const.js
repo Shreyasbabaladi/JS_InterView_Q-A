@@ -28,6 +28,7 @@ const f = 4;
 const f = 5;
 //! ERR SystaxERROR Missing initializer in const declaration
 
+
 // // /////////////////////////////////////////////////////////////////////// 
 
 //? Declaration without initialisation
@@ -36,11 +37,23 @@ const a;//! ERR SystaxERROR Missing initializer in const declaration
 
 // // /////////////////////////////////////////////////////////////////////// 
 
+function () { //! "SyntaxError: Function statements require a function name
+   
+}
+// // /////////////////////////////////////////////////////////////////////// 
+
 // ? Re-Initialisation
 const h =5;
 h = 8; //! TypeERROR: Assignement to constant variable
 
 // // /////////////////////////////////////////////////////////////////////// 
+
+var getName = function name () {
+   console.log('Shreyas')
+ }
+ getName();
+ name(); //! "TypeError: name is not a function
+
 // * Hoisting 
 // ? hoisting prosess where variable are move to top the code this is called hoisting.
 // ? var is hoisted in golble scope , const and let variable are hoisted in Temporal Dead Zone 
