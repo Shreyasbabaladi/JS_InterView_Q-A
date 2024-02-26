@@ -105,3 +105,32 @@ Function.prototype.myBind = function (context, ...args) {
     return result;
   };
 };
+
+//! Promise.all()
+Promise.myAll = function (promises) {
+  return new Promise(function (resolve, reject) {
+    if (!Array.isArray(promises))
+      return reject(new TypeError("arguments is not an array"));
+
+    let result = [];
+    var remaining = promises.length;
+
+    if (remaining === 0) {
+      return resolve(result);
+    } else {
+      promises.forEach((promise, index) => {
+        Promise.resolve(promise)
+          .then((value) => {
+            result[index] = value;
+            remaining--;
+            if (remaining == 0) {
+              return resolve(result);
+            }
+          })
+          .catch((err) => {
+            return reject(err);
+          });
+      });
+    }
+  });
+};
