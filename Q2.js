@@ -33,6 +33,7 @@ function a() {
 //3
 //3
 
+
 function b() {
   for (var i = 0; i < 3; i++) {
     setTimeout(function log() {
